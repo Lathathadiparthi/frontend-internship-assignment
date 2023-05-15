@@ -4,11 +4,11 @@ import { HomeComponent } from '../app/components/home/home.component';
 import { TrendingSubjectsComponent } from '../app/components/trending-subjects/trending-subjects.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    title: 'Open Books Library',
-  },
+  // {
+  //   path: '',
+  //   component: HomeComponent,
+  //   title: 'Open Books Library',
+  // },
   {
     path: 'trending-subject/:name',
     component: TrendingSubjectsComponent,

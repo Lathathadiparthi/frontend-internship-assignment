@@ -1,9 +1,17 @@
+
+.table-view-container {
+  @apply
+  tw-w-3/4
+  tw-m-24-px
+
+   tw-float-right
+}
 .table-view {
   @apply
   tw-w-full
   tw-overflow-hidden
   tw-border-collapse
-  tw-p-12-px
+   tw-p-12-px
   tw-table-auto
 }
 
@@ -14,7 +22,7 @@
   tw-border-solid
   tw-border-light-border
   tw-bg-table-header-bg
-  tw-pl-12-px;
+   tw-pl-12-px;
 
   .header {
     @apply

@@ -1,0 +1,13 @@
+<div class="tw-flex tw-flex-row tw-m-24-px ">
+  <section class="trending-subjects"> 
+    <div class="home tw-font-600 tw-text-24-px tw-pb-12-px" routerLink="">    <i class="bi bi-house-door" style="font-size: 25px;"></i>   
+      Home</div>
+     <div> <hr></div>
+    <div class="tw-font-600 tw-text-24-px">Trending Subjects</div>
+    <ul class="tw-list-none tw-pl-0">
+      <li class="tw-text-16-px tw-cursor-pointer tw-p-12-px" *ngFor="let subject of trendingSubjects" routerLink="/trending-subject/{{ subject.name }}" >
+        {{ subject.name }}
+      </li>
+    </ul>
+  </section>
+</div>

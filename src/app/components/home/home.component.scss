@@ -19,13 +19,14 @@
   tw-flex
   tw-justify-center
   tw-h-60-px
-  tw-w-200-px
+  tw-w-auto
+  tw-mr-24-px
 }
 
-.trending-subjects {
-  @apply
-  tw-bg-table-header-bg
-  tw-p-12-px
-  tw-rounded-4-px
-  tw-shadow-lg
-}
+// .trending-subjects {
+//   @apply
+//   tw-bg-table-header-bg
+//   tw-p-12-px
+//   tw-rounded-4-px
+//   tw-shadow-lg
+// }

@@ -44,6 +44,13 @@ export interface Book {
   has_fulltext: boolean;
   availability: Availability;
 }
+export interface Doc {
+  key:String;
+  type:string;
+  title:string;
+  first_publish_year:number;
+  author_name:string[];
+}
 
 export interface BookResponse {
   key: string;
@@ -51,4 +58,10 @@ export interface BookResponse {
   subject_type: string;
   work_count: number;
   works: Book[];
+}
+export interface Responce1 {
+  numFound: number;
+  start: number;
+  numFoundExact: boolean;
+  docs: Doc[];
 }

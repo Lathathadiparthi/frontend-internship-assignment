@@ -9,18 +9,14 @@ import { debounceTime, filter } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   bookSearch: FormControl;
+  query='';
+  isloading=false;
 
   constructor() {
     this.bookSearch = new FormControl('');
   }
 
-  trendingSubjects: Array<any> = [
-    { name: 'JavaScript' },
-    { name: 'CSS' },
-    { name: 'HTML' },
-    { name: 'Harry Potter' },
-    { name: 'Crypto' },
-  ];
+  
 
   ngOnInit(): void {
     this.bookSearch.valueChanges
@@ -28,6 +24,12 @@ export class HomeComponent implements OnInit {
         debounceTime(300),
       ).
       subscribe((value: string) => {
+          // this.query=value;
       });
   }
+   Getvalue(value:any) {
+      this.query=value
+     }
+  
+
 }
